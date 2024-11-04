@@ -1,16 +1,23 @@
-# compiler task
-run the code editor.py file to run the code editor and the scanner
+# Compiler Design Project
+## Project Milestones
+- [x] Scanner
+- [ ] Parser
+- [ ] Code Generator
+## Usage
+Run the `code editor.py` file to run the code editor and put your input inside the text box window.
 
-# todos:
-1. complete the keywords of c language (Done by Eddy)
-2. modify the regex for the identifiers (Done by Eddy)
-3. abstract the scanner in a class 
-4. create scanner class with scan function
-5. create token class with attributes val,type
+![Testcase Example](assets/image.png)
+The program outputs the token in a list containing a tuple of matches.
 
+![Output Image](assets/image2.png)
 
-Eddy(fixed the text not identifying keywords colors )
-Eddy(added more operators to the operator regex )
-Eddy(tried with comments but damn too difficult  )
+> As of this moment, there's a small issue with the comments regex, probably due to GUI issues.
 
-يلا اللي يعرف يعمل حاجة يعملها
+## Team Members
+| Name | Section Number |
+| :----: | :---: |
+| عبدالله إيهاب وجيه     | 3     |
+|   إياد سامح الأعصر     | 2   |
+| عمر مختار محمد كامل شتات      |   4    |
+| عبدالله السيد الغندور| 3|
+| سيف الدين منتصر حسين| 3|
