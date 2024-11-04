@@ -11,7 +11,7 @@ symbol_table = [
     ("special_character", r"[(){};,.\"\']"),
     ("white_space", r"\s+"),
     ("tab",r"\t"),
-    ("comment",r"//|/\*.*?\*/$")
+    ("comment",r"//[^\n]*") #ً Wait for `//` and take ALL characters except for the newline.
 ]
 
 
