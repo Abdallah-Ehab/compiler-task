@@ -2,12 +2,12 @@ import re
 
 
 symbol_table = [
-    ("keyword", r"\bif\b|\bwhile\b|\bfor\b|\bswitch\b|\bcase\b|\bint\b|\bdouble\b|\bprint\b"),  
-    ("identifier", r"[\w_]+"),
+    ("keyword", r"\bauto\b|\bbreak\b|\bcase\b|\bchar\b|\bconst\b|\bcontinue\b|\bdefault\b|\bdefault\b|\bdouble\b|\belse\b|\benum\b|\bextern\b|\bfloat\b|\bfor\b|\bgoto\b|\bif\b|\binline\b|\bint\b|\blong\b|\bregister\b|\brestrict\b|\breturn\b|\bshort\b|\bsigned\b|\bsizeof\b|\bstatic\b|\bstruct\b|\bswitch\b|\btypedef\b|\bunion\b|\bunsigned\b|\bvoid\b|\bvolatile\b|\bwhile\b|\b_Bool\b|\b_Complex\b|\b_Imaginary\b"),  
+    ("identifier", r"[_a-zA-Z][_a-zA-Z0-9]*"),
     ("String",r"\"[\w_&$-]*\""),
     ("float", r"\d+\.\d+"),
     ("int", r"\d+"),
-    ("operator", r"\+{1,2}|-{1,2}|={1,2}|&{1,2}|\|{1,2}|!"),
+    ("operator", r"\+{1,2}|-{1,2}|={1,2}|&{1,2}|\|{1,2}|!|\/|%|\*|<<|>>|<|>|<=|>=|==|!=|\^|\?|\:"),
     ("special_character", r"[(){};,.\"\']"),
     ("white_space", r"\s+"),
     ("tab",r"\t"),
