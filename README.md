@@ -7,7 +7,7 @@
 Run the `code editor.py` file to run the code editor and put your input inside the text box window.
 
 ![Testcase Example](assets/image.png)
-The program outputs the token in a list containing a tuple of matches.
+
 
 ![Output Image](assets/image2.png)
 
