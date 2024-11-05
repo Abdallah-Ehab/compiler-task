@@ -12,7 +12,6 @@ symbol_table = [
     ("new_line",r"\n"),
     ("white_space", r"\s+"),
     ("tab", r"\t"),
-
 ]
 
 class Token:
