@@ -11,7 +11,7 @@ The program outputs the token in a list containing a tuple of matches.
 
 ![Output Image](assets/image2.png)
 
-> As of this moment, there's a small issue with the comments regex, probably due to GUI issues.
+> As of this moment, there's a small issue with the comments regex, probably due to GUI issues.(solved)
 
 ## Team Members
 | Name | Section Number |
