@@ -1,7 +1,7 @@
 # Compiler Design Project
 ## Project Milestones
 - [x] Scanner
-- [ ] Parser
+- [x] Parser
 - [ ] Code Generator
 ## Usage
 Run the `code editor.py` file to run the code editor and put your input inside the text box window.
