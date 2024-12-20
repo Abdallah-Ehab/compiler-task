@@ -1,15 +1,16 @@
+from collections import defaultdict
 
-
-grammer = {
-    "S":["aSB","b"],
+# grammer = {
+#     "S":["aSB","b"],
     
-    "B":["bBa","a"]
-}
+#     "B":["bBa","a"]
+# }
+
+grammer = defaultdict(list)
 
 
 
 
-target_symbol = "S"
 
 ## edge cases : 
 # 1.check if the grammer is simple by looping over each array then finding if the first letter is terminal then finding if
@@ -39,8 +40,8 @@ def get_the_right_term(cur_symbol,top_of_stack):
 
 
 
-def push_down(input_symbols,terminals):
-    stack = [target_symbol]
+def push_down(input_symbols,terminals,goal_symbol):
+    stack = [goal_symbol]
     i = 0
     while stack and i < len(input_symbols):
         curr_symbol = input_symbols[i]
@@ -59,11 +60,25 @@ def push_down(input_symbols,terminals):
     return True
 
 if __name__ == "__main__":
+    running = True
+    while running:
+        rule = input("Enter the grammer rule in the form of S : rule \n")
+        if rule == "q":
+            running = False
+            break
+        nonterminal_symbol, terminals_symbols = rule.split(":")
+        nonterminal_symbol = nonterminal_symbol.strip()
+        terminals_symbols = terminals_symbols.strip()
+        
+        grammer[nonterminal_symbol].append(terminals_symbols)
+    goal_symbol = list(grammer.keys())[0]
+    print(grammer)
+    print(goal_symbol)
     is_simple,terminals = check_simple()
     if not is_simple:
         print("grammer is not simple")
     else:
-        res = push_down("ababa",terminals=terminals)
+        res = push_down("ababa",terminals=terminals,goal_symbol=goal_symbol)
         if res:
             print("good")
         else:
